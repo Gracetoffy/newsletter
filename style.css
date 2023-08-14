@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color:hsl(235, 18%, 26%);  
+    color:  hsl(234, 29%, 20%);
+    font-family:'Roboto';
+}
+.body{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+   
+    padding: 20px;
+    border-radius: 10px;
+}
+.content{
+   width: 55%;
+    margin-top: 5%;
+    
+    display: flex;
+    height: 460px;
+}
+.form{
+    padding: 20px;
+}
+img{
+    height: auto;
+    margin: 0px;
+    flex:5;
+}
+.header{
+    font-weight:700;
+    color:  hsl(234, 29%, 20%);
+    font-size: 40px;
+}
+.form p{
+    width: 85%;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+ol{
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+ol li{
+    list-style-image: url(./assets/images/icon-list.svg);
+    padding: 7px;
+}
+
+.mobile{
+    display: none;
+}
+label{
+     color:  hsl(234, 29%, 20%);
+     font-weight:700;
+   font-size: 12px;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 7px;
+}
+input[type=email]{
+    border: 1px hsl(231, 7%, 60%) solid;
+    padding: 10px;
+   
+    background-color: hsla(0, 0%, 100%, 0.925);
+}
+#errormsg{
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+input[type=button]{
+    border: none;
+    padding: 15px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 98%);
+    width: 100%;
+}
+input:hover{
+   cursor: pointer; 
+}
+input[type=button]:hover{
+    transition: color, 1s;
+    box-shadow: 7px 7px 7px hsl(4, 93%, 73%) ;
+    background-color:  hsl(4, 100%, 67%); 
+    
+}
+.successmsg{
+    width: 24%;
+    margin-top: 10%;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.successmsg h1{
+    font-size: 35px;
+    width: 100%;
+}
+.successmsg img{
+    width: 16%;
+}
+.successmsg p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1180px){
+    img{
+        height: auto;
+        width: 60%;
+        flex: 8;
+    }
+
+    .content{
+        width: 70%;
+         margin-top: 5%;
+         
+         display: flex;
+         height: 460px;
+     }
+}
+
+
+@media(max-width:920px){
+      .content{
+        width: 85%;
+         margin-top: 5%;
+         
+         display: flex;
+         height: 460px;
+     }
+      
+     .successmsg{
+        width: 34%;
+        
+    }
+
+
+
+
+}
+
+@media(max-width:754px){
+    .content{
+      width: 96%;
+       margin-top: 5%;
+       
+       display: flex;
+       height: 460px;
+   }
+
+   .successmsg{
+    width: 38%;
+    
+}
+}
+
+@media(max-width:664px){
+    .content{
+      width:98%;
+       margin-top: 5%;
+       
+      
+    }   
+  .form{
+    padding: 10px; 
+    
+  }
+    
+}
+
+@media(max-width:620px){
+    .content{
+      width:100%;
+       
+       height: 100%;
+       
+    }  
+    img{
+        width: 41%;
+    } 
+    .successmsg{
+        width: 45%;
+        
+    }
+}
+
+@media(max-width:556px){
+    .form{
+      
+        flex: 5;
+        width: 50%;
+       
+    }
+    .header {
+        font-size: 36px;
+    }
+
+    .successmsg{
+        width: 53%;
+        
+    }
+    
+}
+
+@media(max-width:440px){
+    .successmsg{
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        padding-top: 40%;
+        height: 100%;
+        
+        
+    }
+    .successmsg h1{
+      margin-top: 10%;
+    }
+
+    
+    .successmsg p{
+        margin-top: 15%;
+      
+        margin: 5%;
+        margin-bottom: 58%;
+    }
+   .desktop{
+    display: none;
+   }
+   .mobile{
+    display: block;
+    width: fit-content;
+   }
+   input{
+    width: 85%;
+   }
+   input[type=button]{
+    
+    width: 90%;
+}
+   .form{
+    width: fit-content;
+    padding: 20px;
+   }
+   .content{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+   }
+
+}
